@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Disease Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            /* Set your new background image */
+            background: url(https://img.freepik.com/free-photo/elegant-roses-pink_23-2147753262.jpg?t=st=1715027103~exp=1715030703~hmac=4ab8b2643e38ffbc74fc8036491a082f5449a92be8b37c1c00cdcd174c6de63b&w=2000) no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.9); /* semi-transparent form */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 350px;
+            text-align: center;
+            backdrop-filter: blur(5px); /* adds a slight blur behind form */
+        }
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #28a745;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+        p.error {
+            color: red;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Flower Disease Detection</h2>
+        
+        <form method="POST">
+            <input type="text" name="username" placeholder="Enter your name" required>
+            <input type="password" name="password" placeholder="Enter password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
